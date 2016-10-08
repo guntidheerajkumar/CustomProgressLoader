@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6019844-5BCF-4B86-BC79-0D37F251256A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KBProgressLoader</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>KBProgressLoader</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="LoaderType.cs" />
+    <Compile Include="ProgressLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1\Frame-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\2\Frame-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\3\Frame_0023.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0009.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0014.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0017.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\4\Frame_0019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Alerts\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Alerts\Info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Alerts\Success.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
