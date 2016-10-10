@@ -33,13 +33,5 @@ namespace KBProgressLoader
 		Type4,
 		Custom
 	}
-
-	public enum ProgressType
-	{
-		Success,
-		Error,
-		Info,
-		Loader
-	}
 }
 

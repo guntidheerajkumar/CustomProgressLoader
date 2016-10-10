@@ -41,7 +41,6 @@
     <Compile Include="LoaderType.cs" />
     <Compile Include="ProgressLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Type.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\1\Frame-1.png" />
