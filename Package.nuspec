@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>KBProgressLoader</id>
+    <version>1.0.0</version>
+    <authors>Dheeraj Kumar Gunti</authors>
+    <owners>Dheeraj Kumar Gunti</owners>
+    <licenseUrl>https://github.com/guntidheerajkumar/KBProgressLoader/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/guntidheerajkumar/KBProgressLoader</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>KB Progress Loader is a custom progress loader which makes your ios application more attractive.
+     There are custom formats that you can define to make use of this progress loader in to your application.</description>
+    <releaseNotes>Initial Version.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>ProgressLoader Xamarin</tags>
+  </metadata>
+  <files>
+      <file src="KBProgressLoader\bin\Release\KBProgressLoader.dll" target="lib" />
+  </files>
+</package>
