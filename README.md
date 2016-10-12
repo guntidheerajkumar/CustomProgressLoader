@@ -22,3 +22,8 @@ Below is the snippet to work with KBProgressLoader
    loader.Dismiss();
  });
  ```
+
+
+Next Version Changes 
+
+- Orientation Support
