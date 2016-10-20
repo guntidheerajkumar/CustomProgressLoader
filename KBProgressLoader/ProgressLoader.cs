@@ -26,59 +26,49 @@ using System;
 
 namespace KBProgressLoader
 {
+
 	/// <summary>
 	/// Progress loader.
 	/// </summary>
 	public class ProgressLoader
 	{
-		private UIView MainView;
-		private UIVisualEffectView blurView;
+		private static UIView blurView;
 
-		private string loaderTitle;
-		private LoaderType loaderType;
-
-		public UIImage[] LoaderImages {
-			get;
-			set;
-		}
-
-		public double Duration {
-			get;
-			set;
-		}
-
-		public ProgressLoader(UIView currentView, string Title, LoaderType Type)
+		public ProgressLoader()
 		{
-			this.MainView = currentView;
-			this.loaderTitle = Title;
-			this.loaderType = Type;
-		}
 
+		}
 		/// <summary>
 		/// Shows the loading.
 		/// </summary>
-		public void ShowLoading()
+		/// <param name="currentView">Current view.</param>
+		/// <param name="Title">Title.</param>
+		/// <param name="loaderType">Loader type.</param>
+		/// <param name="duration">Duration.</param>
+		/// <param name="loaderImages">Loader images.</param>
+		public static void ShowLoading(UIView currentView, string Title, LoaderType loaderType, double duration = 0, UIImage[] loaderImages = null)
 		{
-			var blur = UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark);
-			blurView = new UIVisualEffectView(blur) {
-				Frame = new CGRect(0, 0, this.MainView.Frame.Width, this.MainView.Frame.Height)
+			blurView = new UIView() {
+				Frame = new CGRect(0, 0, currentView.Frame.Width, currentView.Frame.Height)
 			};
 
-			blurView.Layer.Opacity = 0.8f;
-			var halfwidth = this.MainView.Bounds.Width / 2;
-			var halfheight = this.MainView.Bounds.Height / 2;
+			blurView.BackgroundColor = UIColor.Black;
+			blurView.Layer.Opacity = 0.5f;
+			var halfwidth = UIScreen.MainScreen.Bounds.Width / 2;
+			var halfheight = UIScreen.MainScreen.Bounds.Height / 2;
 			var image = new UIImageView(new CGRect(halfwidth - 24, halfheight - 44, 48, 48));
-			image.AnimationImages = GetImages(this.loaderType);
+			image.AnimationImages = GetImages(loaderType, loaderImages);
 			image.AnimationRepeatCount = 0;
-			image.AnimationDuration = Duration;
+			image.AnimationDuration = duration > 0 ? duration : 0.6f;
 			image.StartAnimating();
-			var label = new UITextView(new CGRect(0, image.Frame.Y + 45, this.MainView.Frame.Width, 40));
+			var label = new UITextView(new CGRect(0, image.Frame.Y + 45, currentView.Frame.Width, 40));
 			label.BackgroundColor = UIColor.Clear;
 			label.TextAlignment = UITextAlignment.Center;
-			label.Text = this.loaderTitle;
+			label.Text = Title;
+			label.Font = UIFont.SystemFontOfSize(14);
 			label.TextColor = UIColor.White;
 			blurView.AddSubviews(image, label);
-			this.MainView.AddSubview(blurView);
+			currentView.AddSubview(blurView);
 		}
 
 		/// <summary>
@@ -87,7 +77,7 @@ namespace KBProgressLoader
 		/// <param name="type">The type.</param>
 		/// <returns></returns>
 		/// <exception cref="Exception">Please specify custom loader images. You have chose loader type as custom.</exception>
-		private UIImage[] GetImages(LoaderType type)
+		internal static UIImage[] GetImages(LoaderType type, UIImage[] customLoaderImages)
 		{
 			UIImage[] loaderImages = null;
 			if (type == LoaderType.Type1) {
@@ -137,8 +127,8 @@ namespace KBProgressLoader
 					UIImage.FromBundle("4/Frame_0018.png"), UIImage.FromBundle("4/Frame_0019.png")
 				};
 			} else if (type == LoaderType.Custom) {
-				if (this.LoaderImages != null) {
-					loaderImages = this.LoaderImages;
+				if (customLoaderImages != null) {
+					loaderImages = customLoaderImages;
 				} else {
 					throw new Exception("Please specify custom loader images. You have chose loader type as custom.");
 				}
@@ -147,9 +137,9 @@ namespace KBProgressLoader
 		}
 
 		/// <summary>
-		/// Dismisses this instance.
+		/// Dismiss the Loader.
 		/// </summary>
-		public void Dismiss()
+		public static void Dismiss()
 		{
 			if (blurView != null) {
 				blurView.RemoveFromSuperview();
