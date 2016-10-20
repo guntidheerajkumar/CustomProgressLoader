@@ -14,16 +14,11 @@ For specifying the Title for the loader we can use *LoaderTitle* property.
 Below is the snippet to work with KBProgressLoader
 
 ```
- var loader = new ProgressLoader(this.View, "Processing...", LoaderType.Type1);
- loader.Show();
- this.InvokeOnMainThread(() =>
- {
-   //Processing Logic
-   loader.Dismiss();
- });
+ProgressLoader.ShowLoading(this.View, "Processing...", LoaderType.Type2);
+	Task.Factory.StartNew(() => {
+		this.InvokeOnMainThread(() => {
+				Thread.Sleep(10000);
+				ProgressLoader.Dismiss();
+		});
+});
  ```
-
-
-Next Version Changes 
-
-- Orientation Support
