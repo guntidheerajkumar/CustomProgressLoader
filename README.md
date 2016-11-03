@@ -21,7 +21,7 @@ For specifying the Title for the loader we can use *LoaderTitle* property.
 Below is the snippet to work with KBProgressLoader
 
 ```
-ProgressLoader.ShowLoading(this.View, "Processing...", LoaderType.Type2);
+ProgressLoader.ShowLoading(this.View, "Processing...", LoaderType.Spin);
 Task.Factory.StartNew(() => {
 this.InvokeOnMainThread(() => {
    Thread.Sleep(10000);
