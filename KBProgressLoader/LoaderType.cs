@@ -35,6 +35,7 @@ namespace KBProgressLoader
 		Ring,
 		Signal,
 		Flickr,
+		Heart,
 		Custom
 	}
 }

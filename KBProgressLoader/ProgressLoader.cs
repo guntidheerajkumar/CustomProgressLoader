@@ -193,6 +193,21 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Flickr/Flickr_19"), UIImage.FromBundle("Flickr/Flickr_20")
 				};
 				#endregion
+			} else if (type == LoaderType.Heart) {
+				#region Heart
+				loaderImages = new UIImage[] {
+					UIImage.FromBundle("Heart/Heart_1"), UIImage.FromBundle("Heart/Heart_2"),
+					UIImage.FromBundle("Heart/Heart_3"), UIImage.FromBundle("Heart/Heart_4"),
+					UIImage.FromBundle("Heart/Heart_5"), UIImage.FromBundle("Heart/Heart_6"),
+					UIImage.FromBundle("Heart/Heart_7"), UIImage.FromBundle("Heart/Heart_8"),
+					UIImage.FromBundle("Heart/Heart_9"), UIImage.FromBundle("Heart/Heart_10"),
+					UIImage.FromBundle("Heart/Heart_11"), UIImage.FromBundle("Heart/Heart_12"),
+					UIImage.FromBundle("Heart/Heart_13"), UIImage.FromBundle("Heart/Heart_14"),
+					UIImage.FromBundle("Heart/Heart_15"), UIImage.FromBundle("Heart/Heart_16"),
+					UIImage.FromBundle("Heart/Heart_17"), UIImage.FromBundle("Heart/Heart_18"),
+					UIImage.FromBundle("Heart/Heart_19"), UIImage.FromBundle("Heart/Heart_20")
+				};
+				#endregion
 			} else if (type == LoaderType.Custom) {
 				#region Custom
 				if (customLoaderImages != null) {

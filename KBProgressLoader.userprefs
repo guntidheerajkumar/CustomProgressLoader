@@ -1,9 +1,7 @@
-﻿<Properties StartupConfiguration="{3F16BDC9-695C-4A09-A6A0-7C6E89624155}|Default">
+﻿<Properties>
   <MonoDevelop.Ide.Workbench ActiveDocument="KBProgressLoader/ProgressLoader.cs">
     <Files>
-      <File FileName="Sample/ViewController.cs" Line="21" Column="59" />
-      <File FileName="KBProgressLoader/ProgressLoader.cs" Line="54" Column="56" />
-      <File FileName="KBProgressLoader/LoaderType.cs" Line="37" Column="9" />
+      <File FileName="KBProgressLoader/ProgressLoader.cs" Line="199" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -11,5 +9,4 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Sample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5A6635EF-A4C6-4CDD-808F-84875B84764E" />
 </Properties>
