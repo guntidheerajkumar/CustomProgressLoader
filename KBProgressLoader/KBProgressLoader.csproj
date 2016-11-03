@@ -43,193 +43,270 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-1.png" />
+    <BundleResource Include="Resources\Spin\Frame-1.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_1.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_2.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_3.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_4.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_5.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_6.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_7.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_8.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_9.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_10.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_11.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_12.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_13.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_14.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_15.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_16.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_17.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_18.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_19.png" />
+    <BundleResource Include="Resources\HourGlass\hourglass_20.png" />
+    <BundleResource Include="Resources\Ring\ring_1.png" />
+    <BundleResource Include="Resources\Ring\ring_2.png" />
+    <BundleResource Include="Resources\Ring\ring_3.png" />
+    <BundleResource Include="Resources\Ring\ring_4.png" />
+    <BundleResource Include="Resources\Ring\ring_5.png" />
+    <BundleResource Include="Resources\Ring\ring_6.png" />
+    <BundleResource Include="Resources\Ring\ring_7.png" />
+    <BundleResource Include="Resources\Ring\ring_8.png" />
+    <BundleResource Include="Resources\Ring\ring_9.png" />
+    <BundleResource Include="Resources\Ring\ring_10.png" />
+    <BundleResource Include="Resources\Ring\ring_11.png" />
+    <BundleResource Include="Resources\Ring\ring_12.png" />
+    <BundleResource Include="Resources\Ring\ring_13.png" />
+    <BundleResource Include="Resources\Ring\ring_14.png" />
+    <BundleResource Include="Resources\Ring\ring_15.png" />
+    <BundleResource Include="Resources\Ring\ring_16.png" />
+    <BundleResource Include="Resources\Ring\ring_17.png" />
+    <BundleResource Include="Resources\Ring\ring_18.png" />
+    <BundleResource Include="Resources\Ring\ring_19.png" />
+    <BundleResource Include="Resources\Ring\ring_20.png" />
+    <BundleResource Include="Resources\Signal\Signal_1.png" />
+    <BundleResource Include="Resources\Signal\Signal_2.png" />
+    <BundleResource Include="Resources\Signal\Signal_3.png" />
+    <BundleResource Include="Resources\Signal\Signal_4.png" />
+    <BundleResource Include="Resources\Signal\Signal_5.png" />
+    <BundleResource Include="Resources\Signal\Signal_6.png" />
+    <BundleResource Include="Resources\Signal\Signal_7.png" />
+    <BundleResource Include="Resources\Signal\Signal_8.png" />
+    <BundleResource Include="Resources\Signal\Signal_9.png" />
+    <BundleResource Include="Resources\Signal\Signal_10.png" />
+    <BundleResource Include="Resources\Signal\Signal_11.png" />
+    <BundleResource Include="Resources\Signal\Signal_12.png" />
+    <BundleResource Include="Resources\Signal\Signal_13.png" />
+    <BundleResource Include="Resources\Signal\Signal_14.png" />
+    <BundleResource Include="Resources\Signal\Signal_15.png" />
+    <BundleResource Include="Resources\Signal\Signal_16.png" />
+    <BundleResource Include="Resources\Signal\Signal_17.png" />
+    <BundleResource Include="Resources\Signal\Signal_18.png" />
+    <BundleResource Include="Resources\Signal\Signal_19.png" />
+    <BundleResource Include="Resources\Signal\Signal_20.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_1.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_2.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_3.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_4.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_5.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_6.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_7.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_8.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_9.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_10.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_11.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_12.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_13.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_14.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_15.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_16.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_17.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_18.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_19.png" />
+    <BundleResource Include="Resources\Flickr\Flickr_20.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-2.png" />
+    <BundleResource Include="Resources\Spin\Frame-2.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-3.png" />
+    <BundleResource Include="Resources\Spin\Frame-3.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-4.png" />
+    <BundleResource Include="Resources\Spin\Frame-4.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-5.png" />
+    <BundleResource Include="Resources\Spin\Frame-5.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-6.png" />
+    <BundleResource Include="Resources\Spin\Frame-6.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-7.png" />
+    <BundleResource Include="Resources\Spin\Frame-7.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\1\Frame-8.png" />
+    <BundleResource Include="Resources\Spin\Frame-8.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-1.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-1.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-2.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-2.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-3.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-3.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-4.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-4.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-5.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-5.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-6.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-6.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-7.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-7.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\2\Frame-8.png" />
+    <BundleResource Include="Resources\CurveSpin\Frame-8.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0000.png" />
+    <BundleResource Include="Resources\Squares\Frame_0000.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0001.png" />
+    <BundleResource Include="Resources\Squares\Frame_0001.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0002.png" />
+    <BundleResource Include="Resources\Squares\Frame_0002.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0003.png" />
+    <BundleResource Include="Resources\Squares\Frame_0003.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0004.png" />
+    <BundleResource Include="Resources\Squares\Frame_0004.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0005.png" />
+    <BundleResource Include="Resources\Squares\Frame_0005.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0006.png" />
+    <BundleResource Include="Resources\Squares\Frame_0006.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0007.png" />
+    <BundleResource Include="Resources\Squares\Frame_0007.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0008.png" />
+    <BundleResource Include="Resources\Squares\Frame_0008.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0009.png" />
+    <BundleResource Include="Resources\Squares\Frame_0009.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0010.png" />
+    <BundleResource Include="Resources\Squares\Frame_0010.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0011.png" />
+    <BundleResource Include="Resources\Squares\Frame_0011.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0012.png" />
+    <BundleResource Include="Resources\Squares\Frame_0012.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0013.png" />
+    <BundleResource Include="Resources\Squares\Frame_0013.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0014.png" />
+    <BundleResource Include="Resources\Squares\Frame_0014.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0015.png" />
+    <BundleResource Include="Resources\Squares\Frame_0015.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0016.png" />
+    <BundleResource Include="Resources\Squares\Frame_0016.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0017.png" />
+    <BundleResource Include="Resources\Squares\Frame_0017.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0018.png" />
+    <BundleResource Include="Resources\Squares\Frame_0018.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0019.png" />
+    <BundleResource Include="Resources\Squares\Frame_0019.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0020.png" />
+    <BundleResource Include="Resources\Squares\Frame_0020.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0021.png" />
+    <BundleResource Include="Resources\Squares\Frame_0021.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0022.png" />
+    <BundleResource Include="Resources\Squares\Frame_0022.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\3\Frame_0023.png" />
+    <BundleResource Include="Resources\Squares\Frame_0023.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0000.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0000.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0001.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0001.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0002.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0002.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0003.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0003.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0004.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0004.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0005.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0005.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0006.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0006.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0007.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0007.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0008.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0008.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0009.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0009.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0010.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0010.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0011.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0011.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0012.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0012.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0013.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0013.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0014.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0014.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0015.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0015.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0016.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0016.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0017.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0017.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0018.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0018.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\4\Frame_0019.png" />
+    <BundleResource Include="Resources\Whiggle\Frame_0019.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Alerts\Error.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Alerts\Info.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Alerts\Success.png" />
+    <Folder Include="Resources\HourGlass\" />
+    <Folder Include="Resources\Ring\" />
+    <Folder Include="Resources\Signal\" />
+    <Folder Include="Resources\Flickr\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

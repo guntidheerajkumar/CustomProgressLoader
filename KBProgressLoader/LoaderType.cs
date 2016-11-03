@@ -27,10 +27,14 @@ namespace KBProgressLoader
 {
 	public enum LoaderType
 	{
-		Type1,
-		Type2,
-		Type3,
-		Type4,
+		Spin,
+		Squares,
+		CurveSpin,
+		Whiggle,
+		HourGlass,
+		Ring,
+		Signal,
+		Flickr,
 		Custom
 	}
 }
