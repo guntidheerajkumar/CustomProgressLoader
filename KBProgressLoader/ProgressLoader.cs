@@ -32,7 +32,7 @@ namespace KBProgressLoader
 	/// </summary>
 	public class ProgressLoader
 	{
-		private static UIView blurView;
+		private static UIVisualEffectView blurView;
 
 		/// <summary>
 		/// Shows the loading.
@@ -44,12 +44,16 @@ namespace KBProgressLoader
 		/// <param name="loaderImages">Loader images.</param>
 		public static void ShowLoading(UIView currentView, LoaderType loaderType, string Title = "", double duration = 0, UIImage[] loaderImages = null)
 		{
-			blurView = new UIView() {
+			blurView = new UIVisualEffectView(UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark)) {
 				Frame = new CGRect(0, 0, currentView.Frame.Width, currentView.Frame.Height)
 			};
 
-			blurView.BackgroundColor = UIColor.Black;
-			blurView.Alpha = 0.6f;
+			//blurView = new UIView() {
+			//	Frame = new CGRect(0, 0, currentView.Frame.Width, currentView.Frame.Height)
+			//};
+
+			//blurView.BackgroundColor = UIColor.Black;
+			//blurView.Alpha = 0.6f;
 			var halfwidth = UIScreen.MainScreen.Bounds.Width / 2;
 			var halfheight = UIScreen.MainScreen.Bounds.Height / 2;
 			var image = new UIImageView(new CGRect(halfwidth - 15, halfheight - 35, 30, 30));
@@ -95,27 +99,27 @@ namespace KBProgressLoader
 			} else if (type == LoaderType.CurveSpin) {
 				#region CurveSpin
 				loaderImages = new UIImage[] {
-					UIImage.FromBundle("Squares/Frame-1.png"), UIImage.FromBundle("Squares/Frame-2.png"),
-					UIImage.FromBundle("Squares/Frame-3.png"),UIImage.FromBundle("Squares/Frame-4.png"),
-					UIImage.FromBundle("Squares/Frame-5.png"),UIImage.FromBundle( "Squares/Frame-6.png"),
-					UIImage.FromBundle("Squares/Frame-7.png"), UIImage.FromBundle("Squares/Frame-8.png")
+					UIImage.FromBundle("CurveSpin/Frame-1.png"), UIImage.FromBundle("CurveSpin/Frame-2.png"),
+					UIImage.FromBundle("CurveSpin/Frame-3.png"),UIImage.FromBundle("CurveSpin/Frame-4.png"),
+					UIImage.FromBundle("CurveSpin/Frame-5.png"),UIImage.FromBundle( "CurveSpin/Frame-6.png"),
+					UIImage.FromBundle("CurveSpin/Frame-7.png"), UIImage.FromBundle("CurveSpin/Frame-8.png")
 				};
 				#endregion
 			} else if (type == LoaderType.Squares) {
 				#region Squares
 				loaderImages = new UIImage[] {
-					UIImage.FromBundle("CurveSpin//Frame_0000.png"), UIImage.FromBundle("CurveSpin//Frame_0001.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0002.png"), UIImage.FromBundle("CurveSpin//Frame_0003.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0004.png"), UIImage.FromBundle("CurveSpin//Frame_0005.png"),
-					UIImage.FromBundle( "CurveSpin//Frame_0006.png"), UIImage.FromBundle("CurveSpin//Frame_0007.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0008.png"), UIImage.FromBundle("CurveSpin//Frame_0009.png"),
-					UIImage.FromBundle( "CurveSpin//Frame_0010.png"), UIImage.FromBundle("CurveSpin//Frame_0011.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0012.png"), UIImage.FromBundle("CurveSpin//Frame_0013.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0014.png"),UIImage.FromBundle( "CurveSpin//Frame_0015.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0016.png"), UIImage.FromBundle("CurveSpin//Frame_0017.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0018.png"), UIImage.FromBundle("CurveSpin//Frame_0019.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0020.png"), UIImage.FromBundle("CurveSpin//Frame_0021.png"),
-					UIImage.FromBundle("CurveSpin//Frame_0022.png"), UIImage.FromBundle("CurveSpin//Frame_0023.png")
+					UIImage.FromBundle("Squares//Frame_0000.png"), UIImage.FromBundle("Squares//Frame_0001.png"),
+					UIImage.FromBundle("Squares//Frame_0002.png"), UIImage.FromBundle("Squares//Frame_0003.png"),
+					UIImage.FromBundle("Squares//Frame_0004.png"), UIImage.FromBundle("Squares//Frame_0005.png"),
+					UIImage.FromBundle( "Squares//Frame_0006.png"), UIImage.FromBundle("Squares//Frame_0007.png"),
+					UIImage.FromBundle("Squares//Frame_0008.png"), UIImage.FromBundle("Squares//Frame_0009.png"),
+					UIImage.FromBundle( "Squares//Frame_0010.png"), UIImage.FromBundle("Squares//Frame_0011.png"),
+					UIImage.FromBundle("Squares//Frame_0012.png"), UIImage.FromBundle("Squares//Frame_0013.png"),
+					UIImage.FromBundle("Squares//Frame_0014.png"),UIImage.FromBundle( "Squares//Frame_0015.png"),
+					UIImage.FromBundle("Squares//Frame_0016.png"), UIImage.FromBundle("Squares//Frame_0017.png"),
+					UIImage.FromBundle("Squares//Frame_0018.png"), UIImage.FromBundle("Squares//Frame_0019.png"),
+					UIImage.FromBundle("Squares//Frame_0020.png"), UIImage.FromBundle("Squares//Frame_0021.png"),
+					UIImage.FromBundle("Squares//Frame_0022.png"), UIImage.FromBundle("Squares//Frame_0023.png")
 				};
 				#endregion
 			} else if (type == LoaderType.Whiggle) {
