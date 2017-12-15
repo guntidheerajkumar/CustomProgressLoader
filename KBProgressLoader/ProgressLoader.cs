@@ -44,13 +44,11 @@ namespace KBProgressLoader
 		/// <param name="loaderImages">Loader images.</param>
 		public static void ShowLoading(UIView currentView, LoaderType loaderType, string Title = "", double duration = 0, UIImage[] loaderImages = null)
 		{
-			blurView = new UIVisualEffectView(UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark)) {
+			blurView = new UIVisualEffectView(UIBlurEffect.FromStyle(UIBlurEffectStyle.Dark))
+			{
 				Frame = new CGRect(0, 0, currentView.Frame.Width, currentView.Frame.Height)
 			};
 
-			//blurView = new UIView() {
-			//	Frame = new CGRect(0, 0, currentView.Frame.Width, currentView.Frame.Height)
-			//};
 
 			//blurView.BackgroundColor = UIColor.Black;
 			//blurView.Alpha = 0.6f;
@@ -61,16 +59,18 @@ namespace KBProgressLoader
 			image.AnimationRepeatCount = 0;
 			image.AnimationDuration = duration > 0 ? duration : 0.8f;
 			image.StartAnimating();
-			blurView.AddSubview(image);
-			if (!string.IsNullOrWhiteSpace(Title)) {
+			blurView.ContentView.AddSubview(image);
+			if (!string.IsNullOrWhiteSpace(Title))
+			{
 				var label = new UITextView(new CGRect(0, image.Frame.Y + image.Frame.Height, currentView.Frame.Width, 40));
 				label.BackgroundColor = UIColor.Clear;
 				label.TextAlignment = UITextAlignment.Center;
 				label.Text = Title;
 				label.Font = UIFont.SystemFontOfSize(14);
 				label.TextColor = UIColor.White;
-				blurView.AddSubview(label);
+				blurView.ContentView.AddSubview(label);
 			}
+
 			currentView.AddSubview(blurView);
 		}
 
@@ -83,7 +83,8 @@ namespace KBProgressLoader
 		internal static UIImage[] GetImages(LoaderType type, UIImage[] customLoaderImages)
 		{
 			UIImage[] loaderImages = null;
-			if (type == LoaderType.Spin) {
+			if (type == LoaderType.Spin)
+			{
 				#region Spin
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Spin/Frame-1"),
@@ -96,7 +97,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Spin/Frame-8")
 				};
 				#endregion
-			} else if (type == LoaderType.CurveSpin) {
+			}
+			else if (type == LoaderType.CurveSpin)
+			{
 				#region CurveSpin
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("CurveSpin/Frame-1.png"), UIImage.FromBundle("CurveSpin/Frame-2.png"),
@@ -105,7 +108,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("CurveSpin/Frame-7.png"), UIImage.FromBundle("CurveSpin/Frame-8.png")
 				};
 				#endregion
-			} else if (type == LoaderType.Squares) {
+			}
+			else if (type == LoaderType.Squares)
+			{
 				#region Squares
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Squares//Frame_0000.png"), UIImage.FromBundle("Squares//Frame_0001.png"),
@@ -122,7 +127,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Squares//Frame_0022.png"), UIImage.FromBundle("Squares//Frame_0023.png")
 				};
 				#endregion
-			} else if (type == LoaderType.Whiggle) {
+			}
+			else if (type == LoaderType.Whiggle)
+			{
 				#region Whiggle
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Whiggle/Frame_0000.png"), UIImage.FromBundle("Whiggle/Frame_0001.png"),
@@ -137,7 +144,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Whiggle/Frame_0018.png"), UIImage.FromBundle("Whiggle/Frame_0019.png")
 				};
 				#endregion
-			} else if (type == LoaderType.HourGlass) {
+			}
+			else if (type == LoaderType.HourGlass)
+			{
 				#region HourGlass
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("HourGlass/hourglass_1"), UIImage.FromBundle("HourGlass/hourglass_2"),
@@ -152,7 +161,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("HourGlass/hourglass_19"), UIImage.FromBundle("HourGlass/hourglass_20")
 				};
 				#endregion
-			} else if (type == LoaderType.Ring) {
+			}
+			else if (type == LoaderType.Ring)
+			{
 				#region Ring
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Ring/Ring_1"), UIImage.FromBundle("Ring/Ring_2"),
@@ -167,7 +178,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Ring/Ring_19"), UIImage.FromBundle("Ring/Ring_20")
 				};
 				#endregion
-			} else if (type == LoaderType.Signal) {
+			}
+			else if (type == LoaderType.Signal)
+			{
 				#region Signal
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Signal/Signal_1"), UIImage.FromBundle("Signal/Signal_2"),
@@ -182,7 +195,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Signal/Signal_19"), UIImage.FromBundle("Signal/Signal_20")
 				};
 				#endregion
-			} else if (type == LoaderType.Flickr) {
+			}
+			else if (type == LoaderType.Flickr)
+			{
 				#region Flickr
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Flickr/Flickr_1"), UIImage.FromBundle("Flickr/Flickr_2"),
@@ -197,7 +212,9 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Flickr/Flickr_19"), UIImage.FromBundle("Flickr/Flickr_20")
 				};
 				#endregion
-			} else if (type == LoaderType.Heart) {
+			}
+			else if (type == LoaderType.Heart)
+			{
 				#region Heart
 				loaderImages = new UIImage[] {
 					UIImage.FromBundle("Heart/Heart_1"), UIImage.FromBundle("Heart/Heart_2"),
@@ -212,11 +229,16 @@ namespace KBProgressLoader
 					UIImage.FromBundle("Heart/Heart_19"), UIImage.FromBundle("Heart/Heart_20")
 				};
 				#endregion
-			} else if (type == LoaderType.Custom) {
+			}
+			else if (type == LoaderType.Custom)
+			{
 				#region Custom
-				if (customLoaderImages != null) {
+				if (customLoaderImages != null)
+				{
 					loaderImages = customLoaderImages;
-				} else {
+				}
+				else
+				{
 					throw new Exception("Please specify custom loader images. You have chose loader type as custom.");
 				}
 				#endregion
@@ -229,7 +251,8 @@ namespace KBProgressLoader
 		/// </summary>
 		public static void Dismiss()
 		{
-			if (blurView != null) {
+			if (blurView != null)
+			{
 				blurView.RemoveFromSuperview();
 			}
 		}
